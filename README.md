@@ -1,4 +1,21 @@
-# work
-这是一个牛逼的项目
-是的
-楼上说的很对
+# project
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
