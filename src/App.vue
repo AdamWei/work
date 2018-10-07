@@ -1,9 +1,18 @@
 <template>
   <div id="app">
+		<top/>
     <router-view/>
   </div>
 </template>
+<script>
+import top from '@/components/top.vue'
 
+export default {
+  components: {
+    top
+  },
+}
+</script>
 <style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

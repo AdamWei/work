@@ -1,20 +1,14 @@
 <template>
   <div class="home">
-		<top/>
   	<div class="box" @click="clickbox"></div>
 		<div class="box" @click="clickbox1"></div>
-    
   </div>
 </template>
 
 <script>
-import top from '@/components/top.vue'
 
 export default {
-  name: 'home',
-  components: {
-    top
-  },
+  name: 'index',
   methods:{
   	clickbox(){
   		console.log(111)

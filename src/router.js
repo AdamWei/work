@@ -12,6 +12,10 @@ export default new Router({
       component: index
     },
     {
+      path: '/',
+      component: index
+    },
+    {
       path: '/dice',
       name: 'dice',
       component: () => import(/* webpackChunkName: "dice" */ './views/dice.vue')
