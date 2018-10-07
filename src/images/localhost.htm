@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)http://localhost:8080/#/ -->
+<html lang="en" style="font-size: 312.5%;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="http://localhost:8080/favicon.ico">
+  <link href="http://localhost:8080/dice.js" rel="prefetch"><link href="http://localhost:8080/lotto.js" rel="prefetch"><link href="./localhost_files/app.js" rel="preload" as="script"><style type="text/css">/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+ html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+  
+  /* Sections
+     ========================================================================== */
+  
+  /**
+   * Remove the margin in all browsers.
+   */
+  
+  body {
+    margin: 0;
+  }
+  
+  /**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+  
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+  
+  /* Grouping content
+     ========================================================================== */
+  
+  /**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+  
+  hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /* Text-level semantics
+     ========================================================================== */
+  
+  /**
+   * Remove the gray background on active links in IE 10.
+   */
+  
+  a {
+    background-color: transparent;
+  }
+  
+  /**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+  
+  abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+  }
+  
+  /**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+  
+  b,
+  strong {
+    font-weight: bolder;
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  code,
+  kbd,
+  samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /**
+   * Add the correct font size in all browsers.
+   */
+  
+  small {
+    font-size: 80%;
+  }
+  
+  /**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+  
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  
+  sub {
+    bottom: -0.25em;
+  }
+  
+  sup {
+    top: -0.5em;
+  }
+  
+  /* Embedded content
+     ========================================================================== */
+  
+  /**
+   * Remove the border on images inside links in IE 10.
+   */
+  
+  img {
+    border-style: none;
+  }
+  
+  /* Forms
+     ========================================================================== */
+  
+  /**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+  
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+  }
+  
+  /**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+  
+  button,
+  input { /* 1 */
+    overflow: visible;
+  }
+  
+  /**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+  
+  button,
+  select { /* 1 */
+    text-transform: none;
+  }
+  
+  /**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+  
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+  }
+  
+  /**
+   * Remove the inner border and padding in Firefox.
+   */
+  
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+  
+  /**
+   * Restore the focus styles unset by the previous rule.
+   */
+  
+  button:-moz-focusring,
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+  
+  /**
+   * Correct the padding in Firefox.
+   */
+  
+  fieldset {
+    padding: 0.35em 0.75em 0.625em;
+  }
+  
+  /**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+  
+  legend {
+    box-sizing: border-box; /* 1 */
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+    white-space: normal; /* 1 */
+  }
+  
+  /**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+  
+  progress {
+    vertical-align: baseline;
+  }
+  
+  /**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+  
+  textarea {
+    overflow: auto;
+  }
+  
+  /**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+  
+  [type="checkbox"],
+  [type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+  }
+  
+  /**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+  
+  [type="number"]::-webkit-inner-spin-button,
+  [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+  }
+  
+  /**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+  
+  [type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+  }
+  
+  /**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+  
+  [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  
+  /**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+  
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+  }
+  
+  /* Interactive
+     ========================================================================== */
+  
+  /*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+  
+  details {
+    display: block;
+  }
+  
+  /*
+   * Add the correct display in all browsers.
+   */
+  
+  summary {
+    display: list-item;
+  }
+  
+  /* Misc
+     ========================================================================== */
+  
+  /**
+   * Add the correct display in IE 10+.
+   */
+  
+  template {
+    display: none;
+  }
+  
+  /**
+   * Add the correct display in IE 10.
+   */
+  
+  [hidden] {
+    display: none;
+  }
+  </style><style type="text/css">
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
+#nav {
+  padding: 30px;
+}
+#nav a {
+    font-weight: bold;
+    color: #2c3e50;
+}
+#nav a.router-link-exact-active {
+      color: #42b983;
+}
+
+/*# sourceURL=/Users/mac/work/work/src/App.vue */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9tYWMvd29yay93b3JrL3NyYy9BcHAudnVlIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFBQTtFQUNFLG9EQUFvRDtFQUNwRCxvQ0FBb0M7RUFDcEMsbUNBQW1DO0VBQ25DLGVBQWU7Q0FBRTtBQUVuQjtFQUNFLGNBQWM7Q0FBRTtBQUNoQjtJQUNFLGtCQUFrQjtJQUNsQixlQUFlO0NBQUU7QUFDakI7TUFDRSxlQUFlO0NBQUUiLCJmaWxlIjoiQXBwLnZ1ZSIsInNvdXJjZXNDb250ZW50IjpbIiNhcHAge1xuICBmb250LWZhbWlseTogJ0F2ZW5pcicsIEhlbHZldGljYSwgQXJpYWwsIHNhbnMtc2VyaWY7XG4gIC13ZWJraXQtZm9udC1zbW9vdGhpbmc6IGFudGlhbGlhc2VkO1xuICAtbW96LW9zeC1mb250LXNtb290aGluZzogZ3JheXNjYWxlO1xuICBjb2xvcjogIzJjM2U1MDsgfVxuXG4jbmF2IHtcbiAgcGFkZGluZzogMzBweDsgfVxuICAjbmF2IGEge1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICAgIGNvbG9yOiAjMmMzZTUwOyB9XG4gICAgI25hdiBhLnJvdXRlci1saW5rLWV4YWN0LWFjdGl2ZSB7XG4gICAgICBjb2xvcjogIzQyYjk4MzsgfVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><style type="text/css">
+.header[data-v-576b9cf5] {
+  height: .6rem;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAA8CAMAAABPYVrXAAAAOVBMVEVSA62hAsBpA7KTArydAr+YAr5XA65zA7RuA7RkA7GLArqGA7lfA7B3A7Z8A7dbA6+PAruCArh/A7cYYvnxAAAApklEQVQ4y83J2w6DIBCEYRTPVgTe/2E7uxe0SCYoSZN+TmST33TUD9KguqHD9AW9zcDcS6N86ZY0Uo3JUnkasfQiMcZb660XeC6JkrT5DSvTpjTh9w2pVE87dSOFPWB5CjnJ+AkkxsSPEIPCIZAIJOeii5i7Mul6lA6qkuZjxso0U41poRpTn1v6BdMTiamnFSvSSjWmF9WYTupBms5J4TAT1Zj+wxsQRzAdmLZPHwAAAABJRU5ErkJggg==) repeat left top;
+  padding: 0 .3rem;
+}
+.logo[data-v-576b9cf5] {
+  height: .82rem;
+  width: 1.3rem;
+}
+
+/*# sourceURL=/Users/mac/work/work/src/components/top.vue */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9tYWMvd29yay93b3JrL3NyYy9jb21wb25lbnRzL3RvcC52dWUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBO0VBQ0UsY0FBYztFQUNkLGdjQUFnYztFQUNoYyxpQkFBaUI7Q0FBRTtBQUVyQjtFQUNFLGVBQWU7RUFDZixjQUFjO0NBQUUiLCJmaWxlIjoidG9wLnZ1ZSIsInNvdXJjZXNDb250ZW50IjpbIi5oZWFkZXIge1xuICBoZWlnaHQ6IC42cmVtO1xuICBiYWNrZ3JvdW5kOiB1cmwoZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFCb0FBQUE4Q0FNQUFBQlBZVnJYQUFBQU9WQk1WRVZTQTYyaEFzQnBBN0tUQXJ5ZEFyK1lBcjVYQTY1ekE3UnVBN1JrQTdHTEFycUdBN2xmQTdCM0E3WjhBN2RiQTYrUEFydUNBcmgvQTdjWVl2bnhBQUFBcGtsRVFWUTR5ODNKMnc2RElCQ0VZUlRQVmdUZS8yRTd1eGUwU0NZb1NaTitUbVNUMzNUVUQ5S2d1cUhEOUFXOXpjRGNTNk44NlpZMFVvM0pVbmthc2ZRaU1jWmI2NjBYZUM2SmtyVDVEU3ZUcGpUaDl3MnBWRTg3ZFNPRlBXQjVDam5KK0Fra3hzU1BFSVBDSVpBSUpPZWlpNWk3TXVsNmxBNnFrdVpqeHNvMFU0MXBvUnBUbjF2NkJkTVRpYW1uRlN2U1NqV21GOVdZVHVwQm1zNUo0VEFUMVpqK3d4c1FSekFkbUxaUEh3QUFBQUJKUlU1RXJrSmdnZz09KSByZXBlYXQgbGVmdCB0b3A7XG4gIHBhZGRpbmc6IDAgLjNyZW07IH1cblxuLmxvZ28ge1xuICBoZWlnaHQ6IC44MnJlbTtcbiAgd2lkdGg6IDEuM3JlbTsgfVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><style type="text/css">
+.container[data-v-a83bd3b0] {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/*# sourceURL=/Users/mac/work/work/src/views/index.vue */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9tYWMvd29yay93b3JrL3NyYy92aWV3cy9pbmRleC52dWUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBO0VBQ0UsWUFBWTtFQUNaLGFBQWE7RUFDYixXQUFXO0VBQ1gsVUFBVTtDQUFFIiwiZmlsZSI6ImluZGV4LnZ1ZSIsInNvdXJjZXNDb250ZW50IjpbIi5jb250YWluZXIge1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xuICBwYWRkaW5nOiAwO1xuICBtYXJnaW46IDA7IH1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style type="text/css">
+.first[data-v-7f41c6d0] {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-width: 7.5rem;
+  height: calc(100vh - 60px);
+  min-height: 7.5rem;
+  background: #3a0356 url(/img/firstbg.e3d46fec.png) no-repeat;
+  background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  text-align: center;
+}
+.firstImg[data-v-7f41c6d0] {
+  margin-top: 1rem;
+  width: 5rem;
+  height: 5rem;
+}
+.firstTitle[data-v-7f41c6d0] {
+  font-size: 0.5rem;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: 0.5rem;
+  font-weight: 400;
+  margin-bottom: 0.2rem;
+}
+.firstIntro[data-v-7f41c6d0] {
+  font-size: 0.34rem;
+  color: #ffaa00;
+  letter-spacing: 0;
+  line-height: 0.5rem;
+  font-weight: 300;
+}
+.firstBotton[data-v-7f41c6d0] {
+  display: inline-block;
+  width: 1.4rem;
+  height: 0.55rem;
+  line-height: 0.55rem;
+  text-align: center;
+  font-size: 0.16rem;
+  color: #ffffff;
+  letter-spacing: 0;
+  margin-right: 0.2rem;
+  background: #6d00cc;
+  border-radius: 5rem;
+}
+
+/*# sourceURL=/Users/mac/work/work/src/components/first.vue */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9tYWMvd29yay93b3JrL3NyYy9jb21wb25lbnRzL2ZpcnN0LnZ1ZSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUE7RUFDRSxXQUFXO0VBQ1gsVUFBVTtFQUNWLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsMkJBQTJCO0VBQzNCLG1CQUFtQjtFQUNuQiw0REFBMkQ7RUFDM0QsMkJBQTJCO0VBQzNCLGdDQUFnQztFQUNoQyxtQkFBbUI7Q0FBRTtBQUV2QjtFQUNFLGlCQUFpQjtFQUNqQixZQUFZO0VBQ1osYUFBYTtDQUFFO0FBRWpCO0VBQ0Usa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZixrQkFBa0I7RUFDbEIsb0JBQW9CO0VBQ3BCLGlCQUFpQjtFQUNqQixzQkFBc0I7Q0FBRTtBQUUxQjtFQUNFLG1CQUFtQjtFQUNuQixlQUFlO0VBQ2Ysa0JBQWtCO0VBQ2xCLG9CQUFvQjtFQUNwQixpQkFBaUI7Q0FBRTtBQUVyQjtFQUNFLHNCQUFzQjtFQUN0QixjQUFjO0VBQ2QsZ0JBQWdCO0VBQ2hCLHFCQUFxQjtFQUNyQixtQkFBbUI7RUFDbkIsbUJBQW1CO0VBQ25CLGVBQWU7RUFDZixrQkFBa0I7RUFDbEIscUJBQXFCO0VBQ3JCLG9CQUFvQjtFQUNwQixvQkFBb0I7Q0FBRSIsImZpbGUiOiJmaXJzdC52dWUiLCJzb3VyY2VzQ29udGVudCI6WyIuZmlyc3Qge1xuICBwYWRkaW5nOiAwO1xuICBtYXJnaW46IDA7XG4gIHdpZHRoOiAxMDAlO1xuICBtaW4td2lkdGg6IDcuNXJlbTtcbiAgaGVpZ2h0OiBjYWxjKDEwMHZoIC0gNjBweCk7XG4gIG1pbi1oZWlnaHQ6IDcuNXJlbTtcbiAgYmFja2dyb3VuZDogIzNhMDM1NiB1cmwoXCIuLi9pbWFnZXMvZmlyc3RiZy5wbmdcIikgbm8tcmVwZWF0O1xuICBiYWNrZ3JvdW5kLXNpemU6IDEwMCUgMTAwJTtcbiAgLW1vei1iYWNrZ3JvdW5kLXNpemU6IDEwMCUgMTAwJTtcbiAgdGV4dC1hbGlnbjogY2VudGVyOyB9XG5cbi5maXJzdEltZyB7XG4gIG1hcmdpbi10b3A6IDFyZW07XG4gIHdpZHRoOiA1cmVtO1xuICBoZWlnaHQ6IDVyZW07IH1cblxuLmZpcnN0VGl0bGUge1xuICBmb250LXNpemU6IDAuNXJlbTtcbiAgY29sb3I6ICNmZmZmZmY7XG4gIGxldHRlci1zcGFjaW5nOiAwO1xuICBsaW5lLWhlaWdodDogMC41cmVtO1xuICBmb250LXdlaWdodDogNDAwO1xuICBtYXJnaW4tYm90dG9tOiAwLjJyZW07IH1cblxuLmZpcnN0SW50cm8ge1xuICBmb250LXNpemU6IDAuMzRyZW07XG4gIGNvbG9yOiAjZmZhYTAwO1xuICBsZXR0ZXItc3BhY2luZzogMDtcbiAgbGluZS1oZWlnaHQ6IDAuNXJlbTtcbiAgZm9udC13ZWlnaHQ6IDMwMDsgfVxuXG4uZmlyc3RCb3R0b24ge1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIHdpZHRoOiAxLjRyZW07XG4gIGhlaWdodDogMC41NXJlbTtcbiAgbGluZS1oZWlnaHQ6IDAuNTVyZW07XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgZm9udC1zaXplOiAwLjE2cmVtO1xuICBjb2xvcjogI2ZmZmZmZjtcbiAgbGV0dGVyLXNwYWNpbmc6IDA7XG4gIG1hcmdpbi1yaWdodDogMC4ycmVtO1xuICBiYWNrZ3JvdW5kOiAjNmQwMGNjO1xuICBib3JkZXItcmFkaXVzOiA1cmVtOyB9XG4iXSwic291cmNlUm9vdCI6IiJ9 */</style><script charset="utf-8" src="./localhost_files/app.7af09db4c532aa1339c6.hot-update.js"></script><style type="text/css">
+.first[data-v-e31e96f8] {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-width: 7.5rem;
+  height: calc(100vh - 60px);
+  min-height: 7.5rem;
+  background: #3a0356 url(/img/firstbg.e3d46fec.png) no-repeat;
+  background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  text-align: center;
+}
+.firstImg[data-v-e31e96f8] {
+  margin-top: 1rem;
+  width: 5rem;
+  height: 5rem;
+}
+.firstTitle[data-v-e31e96f8] {
+  font-size: 0.5rem;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: 0.5rem;
+  font-weight: 400;
+  margin-bottom: 0.2rem;
+}
+.firstIntro[data-v-e31e96f8] {
+  font-size: 0.34rem;
+  color: #ffaa00;
+  letter-spacing: 0;
+  line-height: 0.5rem;
+  font-weight: 300;
+}
+.firstBotton[data-v-e31e96f8] {
+  display: inline-block;
+  width: 1.4rem;
+  height: 0.55rem;
+  line-height: 0.55rem;
+  text-align: center;
+  font-size: 0.16rem;
+  color: #ffffff;
+  letter-spacing: 0;
+  margin-right: 0.2rem;
+  background: #6d00cc;
+  border-radius: 5rem;
+}
+
+/*# sourceURL=/Users/mac/work/work/src/components/second.vue */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9tYWMvd29yay93b3JrL3NyYy9jb21wb25lbnRzL3NlY29uZC52dWUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBO0VBQ0UsV0FBVztFQUNYLFVBQVU7RUFDVixZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLDJCQUEyQjtFQUMzQixtQkFBbUI7RUFDbkIsNERBQTJEO0VBQzNELDJCQUEyQjtFQUMzQixnQ0FBZ0M7RUFDaEMsbUJBQW1CO0NBQUU7QUFFdkI7RUFDRSxpQkFBaUI7RUFDakIsWUFBWTtFQUNaLGFBQWE7Q0FBRTtBQUVqQjtFQUNFLGtCQUFrQjtFQUNsQixlQUFlO0VBQ2Ysa0JBQWtCO0VBQ2xCLG9CQUFvQjtFQUNwQixpQkFBaUI7RUFDakIsc0JBQXNCO0NBQUU7QUFFMUI7RUFDRSxtQkFBbUI7RUFDbkIsZUFBZTtFQUNmLGtCQUFrQjtFQUNsQixvQkFBb0I7RUFDcEIsaUJBQWlCO0NBQUU7QUFFckI7RUFDRSxzQkFBc0I7RUFDdEIsY0FBYztFQUNkLGdCQUFnQjtFQUNoQixxQkFBcUI7RUFDckIsbUJBQW1CO0VBQ25CLG1CQUFtQjtFQUNuQixlQUFlO0VBQ2Ysa0JBQWtCO0VBQ2xCLHFCQUFxQjtFQUNyQixvQkFBb0I7RUFDcEIsb0JBQW9CO0NBQUUiLCJmaWxlIjoic2Vjb25kLnZ1ZSIsInNvdXJjZXNDb250ZW50IjpbIi5maXJzdCB7XG4gIHBhZGRpbmc6IDA7XG4gIG1hcmdpbjogMDtcbiAgd2lkdGg6IDEwMCU7XG4gIG1pbi13aWR0aDogNy41cmVtO1xuICBoZWlnaHQ6IGNhbGMoMTAwdmggLSA2MHB4KTtcbiAgbWluLWhlaWdodDogNy41cmVtO1xuICBiYWNrZ3JvdW5kOiAjM2EwMzU2IHVybChcIi4uL2ltYWdlcy9maXJzdGJnLnBuZ1wiKSBuby1yZXBlYXQ7XG4gIGJhY2tncm91bmQtc2l6ZTogMTAwJSAxMDAlO1xuICAtbW96LWJhY2tncm91bmQtc2l6ZTogMTAwJSAxMDAlO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7IH1cblxuLmZpcnN0SW1nIHtcbiAgbWFyZ2luLXRvcDogMXJlbTtcbiAgd2lkdGg6IDVyZW07XG4gIGhlaWdodDogNXJlbTsgfVxuXG4uZmlyc3RUaXRsZSB7XG4gIGZvbnQtc2l6ZTogMC41cmVtO1xuICBjb2xvcjogI2ZmZmZmZjtcbiAgbGV0dGVyLXNwYWNpbmc6IDA7XG4gIGxpbmUtaGVpZ2h0OiAwLjVyZW07XG4gIGZvbnQtd2VpZ2h0OiA0MDA7XG4gIG1hcmdpbi1ib3R0b206IDAuMnJlbTsgfVxuXG4uZmlyc3RJbnRybyB7XG4gIGZvbnQtc2l6ZTogMC4zNHJlbTtcbiAgY29sb3I6ICNmZmFhMDA7XG4gIGxldHRlci1zcGFjaW5nOiAwO1xuICBsaW5lLWhlaWdodDogMC41cmVtO1xuICBmb250LXdlaWdodDogMzAwOyB9XG5cbi5maXJzdEJvdHRvbiB7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgd2lkdGg6IDEuNHJlbTtcbiAgaGVpZ2h0OiAwLjU1cmVtO1xuICBsaW5lLWhlaWdodDogMC41NXJlbTtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBmb250LXNpemU6IDAuMTZyZW07XG4gIGNvbG9yOiAjZmZmZmZmO1xuICBsZXR0ZXItc3BhY2luZzogMDtcbiAgbWFyZ2luLXJpZ2h0OiAwLjJyZW07XG4gIGJhY2tncm91bmQ6ICM2ZDAwY2M7XG4gIGJvcmRlci1yYWRpdXM6IDVyZW07IH1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><script charset="utf-8" src="./localhost_files/app.9ae907340c92e5222131.hot-update.js"></script></head>
+  <body>
+    <div id="app"><div data-v-576b9cf5="" class="header"><img data-v-576b9cf5="" src="./localhost_files/Biggame_Logo.758eec42.png" class="logo"></div> <div data-v-a83bd3b0="" class="container"><div data-v-7f41c6d0="" data-v-a83bd3b0="" class="first"><img data-v-7f41c6d0="" src="./localhost_files/game.b1d68680.png" alt="" class="firstImg"> <div data-v-7f41c6d0="" class="firstTitle">BIG.GAME</div> <div data-v-7f41c6d0="" class="firstIntro">Fair &amp; Exciting EOS Casino Games Platform!</div> <span data-v-7f41c6d0="" class="firstBotton">DICE</span> <span data-v-7f41c6d0="" class="firstBotton">LOTTO</span></div> <div data-v-e31e96f8="" data-v-a83bd3b0="" class="first"><img data-v-e31e96f8="" src="./localhost_files/game.b1d68680.png" alt="" class="firstImg"> <div data-v-e31e96f8="" class="firstTitle">BIG.GAME</div> <div data-v-e31e96f8="" class="firstIntro">Fair &amp; Exciting EOS Casino Games Platform!</div> <span data-v-e31e96f8="" class="firstBotton">DICE</span> <span data-v-e31e96f8="" class="firstBotton">LOTTO</span></div></div></div>
+    <!-- built files will be auto injected -->
+  <script type="text/javascript" src="./localhost_files/app.js"></script>
+
+<audio controls="controls" style="display: none;"></audio></body><style type="text/css">#yddContainer{display:block;font-family:Microsoft YaHei;position:relative;width:100%;height:100%;top:-4px;left:-4px;font-size:12px;border:1px solid}#yddTop{display:block;height:22px}#yddTopBorderlr{display:block;position:static;height:17px;padding:2px 28px;line-height:17px;font-size:12px;color:#5079bb;font-weight:bold;border-style:none solid;border-width:1px}#yddTopBorderlr .ydd-sp{position:absolute;top:2px;height:0;overflow:hidden}.ydd-icon{left:5px;width:17px;padding:0px 0px 0px 0px;padding-top:17px;background-position:-16px -44px}.ydd-close{right:5px;width:16px;padding-top:16px;background-position:left -44px}#yddKeyTitle{float:left;text-decoration:none}#yddMiddle{display:block;margin-bottom:10px}.ydd-tabs{display:block;margin:5px 0;padding:0 5px;height:18px;border-bottom:1px solid}.ydd-tab{display:block;float:left;height:18px;margin:0 5px -1px 0;padding:0 4px;line-height:18px;border:1px solid;border-bottom:none}.ydd-trans-container{display:block;line-height:160%}.ydd-trans-container a{text-decoration:none;}#yddBottom{position:absolute;bottom:0;left:0;width:100%;height:22px;line-height:22px;overflow:hidden;background-position:left -22px}.ydd-padding010{padding:0 10px}#yddWrapper{color:#252525;z-index:10001;background:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ab20.png);}#yddContainer{background:#fff;border-color:#4b7598}#yddTopBorderlr{border-color:#f0f8fc}#yddWrapper .ydd-sp{background-image:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ydd-sprite.png)}#yddWrapper a,#yddWrapper a:hover,#yddWrapper a:visited{color:#50799b}#yddWrapper .ydd-tabs{color:#959595}.ydd-tabs,.ydd-tab{background:#fff;border-color:#d5e7f3}#yddBottom{color:#363636}#yddWrapper{min-width:250px;max-width:400px;}</style></html>
