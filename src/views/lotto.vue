@@ -1,26 +1,21 @@
 <template>
-  <div class="about">
-    345
+  <div>
+    <tableList></tableList>
+    <bottom></bottom>
   </div>
 </template>
 <script>
-
-import axios from 'axios'
-
+import tableList from "@/components/table.vue";
+import bottom from "@/components/bottom.vue";
 export default {
   components: {
+    tableList,
+    bottom
   },
-  data () {
-    return {
-    }
-  },
-  created () {  
-  },
-  methods: {
-   
+  data() {
+    return {}
   }
 }
 </script>
 <style lang="scss" scoped>
-
 </style>
