@@ -3,9 +3,9 @@
         <img src="../images/number.png"  class="secondImg2">
         <img src="../images/blance.png"  class="secondImg1">
        
-        <div class="firstTitle">Provably Fair</div>
-        <div class="firstIntro">We believe in the transparency of Blockchain and count on mathematical algorithm.</div>
-        <div class="firstIntro">Every game on BIG.GAME is provably fair with public algorithms and open source codes.</div>
+        <div class="firstTitle">公平可验证</div>
+        <div class="firstIntro">我们信仰区块链的透明和公开，信仰数学算法。</div>
+        <div class="firstIntro">BIG.GAME上的每一个游戏，都是可以被验证没有作弊的</div>
 
     </div>
 </template>
@@ -35,7 +35,7 @@ export default {
   text-align: center;
 }
 .secondImg1 {
-  margin-top: 1rem;
+  margin-top: 2rem;
   width: 4.5rem;
   height: 4.5rem;
   text-align: center;

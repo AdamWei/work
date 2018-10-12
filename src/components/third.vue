@@ -2,10 +2,10 @@
     <div class="first">
         <img src="../images/house.png"  class="secondImg1">
         <img src="../images/play.png"  class="secondImg2">   
-        <div class="firstTitle">Fun & Exciting</div>
-        <div class="firstIntro">Popular games like Lottery, Dice, Slot, </div>
-        <div class="firstIntro">Baccarat and BlackJack will be launched soon.</div>
-        <div class="firstIntro">Excellent products bring players fun & excitement.</div>
+        <div class="firstTitle">有趣刺激</div>
+        <div class="firstIntro">我们将把流行的各种游戏尽快带到我们的平台上， </div>
+        <div class="firstIntro">包括彩票、骰子、老虎机、百家乐、21点等等。</div>
+        <div class="firstIntro">通过精良的制作给玩家带来有趣和刺激的体验。</div>
     </div>
 </template>
 
@@ -28,7 +28,7 @@ export default {
   text-align: center;
 }
 .secondImg1 {
-  margin-top: 1rem;
+  margin-top: 2rem;
   width: 4.5rem;
   height: 4.5rem;
   margin-left: 0.2rem;

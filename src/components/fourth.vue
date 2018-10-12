@@ -2,16 +2,16 @@
     <div>
         <div class="first">
             <img src="../images/money.png"  class="secondImg1">
-            <div class="firstTitle">Profit Sharing</div>
-            <div class="firstIntro">BIG.GAME will share the profits</div>
-            <div class="firstIntro">to all players through a dividend plan.</div>
-            <div class="firstIntro">Coming soon!</div>
+            <div class="firstTitle">分享利润</div>
+            <div class="firstIntro">BIG.GAME将通过分红计划</div>
+            <div class="firstIntro">把平台利润和所有玩家共享</div>
+            <div class="firstIntro">分红计划即将上线</div>
         </div>
         <div class="first">
             <img src="../images/calculate.png"  class="secondImg1">
-            <div class="firstTitle">Feeless</div>
-            <div class="firstIntro">Gamble joyfully anytime, anywhere,</div>
-            <div class="firstIntro">with zero fees.</div>
+            <div class="firstTitle">零手续费</div>
+            <div class="firstIntro">无需手续费，随时随地</div>
+            <div class="firstIntro">尽享游戏乐趣</div>
         </div>
     </div>
 </template>
@@ -29,13 +29,13 @@ export default {
   margin: 0;
   width: 100%;
   min-width: 7.5rem;
-  height: calc(80vh);
+  height: calc(70vh);
   min-height: 7.5rem;
   background: #5000A0;
   text-align: center;
 }
 .secondImg1 {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   width: 4.5rem;
   height: 4.5rem;
   text-align: center;

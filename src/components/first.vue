@@ -2,9 +2,9 @@
     <div class="first">
         <img src="../images/game.png" alt="" class="firstImg">
         <div class="firstTitle">BIG.GAME</div>
-        <div class="firstIntro">Fair & Exciting EOS Casino Games Platform!</div>
-        <span class="firstBotton" @click="toDice">DICE</span>
-        <span class="firstBotton" @click="toLotto">LOTTO</span>
+        <div class="firstIntro">公平透明、有趣刺激的ESO博彩游戏平台!</div>
+        <span class="firstBotton" @click="toDice">掷骰子</span>
+        <span class="firstBotton" @click="toLotto">大乐透</span>
     </div>
 </template>
 
