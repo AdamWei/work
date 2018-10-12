@@ -19,16 +19,18 @@
         </div>
       </div>
     </div>
+    <tableList/>
     <bottom/>
   </div>
 </template>
 <script>
 import axios from "axios";
 import bottom from "@/components/bottom.vue";
-
+import tableList from "@/components/table.vue";
 export default {
   components: {
-    bottom
+    bottom,
+    tableList
   },
   data() {
     return {};
