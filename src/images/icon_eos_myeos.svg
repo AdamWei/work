@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="31px" viewBox="0 0 30 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_eos_myeos</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_eos_myeos" fill="#FFCB01" fill-rule="nonzero">
+            <g>
+                <path d="M15.5,3.33171942 L8.47842947,9.50701652 L6.6243742,22.4854034 L15.5,27.8325459 L24.3756258,22.4854034 L22.5215705,9.50701652 L15.5,3.33171942 Z M24.3970138,8.49298348 L26.5429585,23.5145966 L15.5,30.1674541 L4.45704151,23.5145966 L6.60298624,8.49298348 L15.5,0.668280579 L24.3970138,8.49298348 Z" id="Polygon"></path>
+                <path d="M8.27275866,21.5884573 L22.808657,21.5884573 L15.5407079,9 L8.27275866,21.5884573 Z M26.2727587,23.5884573 L4.80865705,23.5884573 L15.5407079,5 L26.2727587,23.5884573 Z" id="Polygon-2"></path>
+                <polygon id="Path-4" points="14.5878906 2.29882812 16.5878906 2.29882812 16.5878906 8.33038337 14.5878906 8.33038337"></polygon>
+                <polygon id="Path-5" points="15.4052734 24.7396075 22.1863806 8.92333083 24.0245569 9.7114348 15.4052734 29.81508 6.78598997 9.7114348 8.62416628 8.92333083"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
